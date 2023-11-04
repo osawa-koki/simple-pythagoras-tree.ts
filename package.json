@@ -1,0 +1,26 @@
+{
+  "name": "simple-pythagoras-tree.ts",
+  "version": "1.0.0",
+  "description": "🏵🏵🏵 TypeScriptでピタゴラスの木を描画する！",
+  "main": "./src/index.ts",
+  "repository": "https://github.com/osawa-koki/simple-pythagoras-tree.ts.git",
+  "author": "osawa-koki <koki@osawa.dev>",
+  "license": "Apache-2.0",
+  "private": false,
+  "engines": {
+    "node": ">=20.0.0",
+    "yarn": ">=1.22.0"
+  },
+  "scripts": {
+    "dev": "node -r esbuild-register ./src/index.ts",
+    "build": "esbuild ./src/index.ts --bundle --platform=node --target=node20 --outfile=./dist/index.js",
+    "start": "node ./dist/index.js"
+  },
+  "dependencies": {
+    "typescript": "^5.2.2"
+  },
+  "devDependencies": {
+    "esbuild": "^0.19.5",
+    "esbuild-register": "^3.5.0"
+  }
+}
