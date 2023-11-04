@@ -7,14 +7,20 @@
   "author": "osawa-koki <koki@osawa.dev>",
   "license": "Apache-2.0",
   "private": false,
-  "type": "module",
   "engines": {
     "node": ">=20.0.0",
     "yarn": ">=1.22.0"
   },
-  "scripts": {},
+  "scripts": {
+    "dev": "node -r esbuild-register ./src/index.ts",
+    "build": "esbuild ./src/index.ts --bundle --platform=node --target=node20 --outfile=./dist/index.js",
+    "start": "node ./dist/index.js"
+  },
   "dependencies": {
     "typescript": "^5.2.2"
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "esbuild": "^0.19.5",
+    "esbuild-register": "^3.5.0"
+  }
 }
