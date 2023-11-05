@@ -2,4 +2,4 @@
 
 🏵🏵🏵 TypeScriptでピタゴラスの木を描画する！  
 
-![成果物](./image.png)  
+![成果物](./fruit.png)  
