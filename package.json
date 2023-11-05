@@ -18,10 +18,10 @@
   },
   "dependencies": {
     "canvas": "^2.11.2",
-    "jimp": "^0.22.10",
     "typescript": "^5.2.2"
   },
   "devDependencies": {
+    "@types/node": "^20.8.10",
     "esbuild": "^0.19.5",
     "esbuild-register": "^3.5.0"
   }
