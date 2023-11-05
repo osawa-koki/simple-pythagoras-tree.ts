@@ -18,11 +18,17 @@
   },
   "dependencies": {
     "canvas": "^2.11.2",
-    "typescript": "^5.2.2"
+    "typescript": "*"
   },
   "devDependencies": {
     "@types/node": "^20.8.10",
+    "@typescript-eslint/eslint-plugin": "^6.4.0",
     "esbuild": "^0.19.5",
-    "esbuild-register": "^3.5.0"
+    "esbuild-register": "^3.5.0",
+    "eslint": "^8.0.1",
+    "eslint-config-standard-with-typescript": "^39.1.1",
+    "eslint-plugin-import": "^2.25.2",
+    "eslint-plugin-n": "^15.0.0 || ^16.0.0 ",
+    "eslint-plugin-promise": "^6.0.0"
   }
 }
