@@ -6,9 +6,10 @@
 
 ## 実行方法
 
-DevContainerに入り、以下のコマンドを実行します！  
-
 ```shell
+# モジュールのインストール
+yarn install
+
 # 開発用に実行
 yarn dev
 
