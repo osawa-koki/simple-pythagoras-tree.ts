@@ -9,7 +9,7 @@ function main (): void {
   ctx.fillStyle = 'rgb(255, 255, 255)'
   ctx.fillRect(0, 0, canvasSize, canvasSize)
 
-  // @ts-ignore
+  // @ts-expect-error `node-canvas` does not have some properties.
   drawPythagorasTree(ctx, canvasSize)
 
   const out = fs.createWriteStream('./image.png')
