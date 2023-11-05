@@ -17,6 +17,7 @@
     "start": "node ./dist/index.js"
   },
   "dependencies": {
+    "jimp": "^0.22.10",
     "typescript": "^5.2.2"
   },
   "devDependencies": {
