@@ -1,13 +1,25 @@
-export default function Draw (ctx: CanvasRenderingContext2D, canvasSize: number): void {
-  const colorHueStart = 0
-  const colorHueEnd = 320
+export interface Props {
+  canvasSize: number
+  colorHueStart: number
+  colorHueEnd: number
+  size: number
+  left: number
+  bottom: number
+  baseDegree: number
+  maxIterations: number
+}
 
-  const size = 15
-  const left = 35
-  const bottom = 15
-
-  const baseDegree = 60
-  const maxIterations = 10
+export default function Draw (ctx: CanvasRenderingContext2D, props: Props): void {
+  const {
+    canvasSize,
+    colorHueStart,
+    colorHueEnd,
+    size,
+    left,
+    bottom,
+    baseDegree,
+    maxIterations
+  } = props
 
   const boxSize = canvasSize * size / 100
   const leftSize = canvasSize * left / 100
